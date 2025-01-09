@@ -1,0 +1,98 @@
+1. Basic Java Syntax and Structure
+
+    Java Program Structure: Understanding the structure of a Java program (class, main method, etc.).
+    Data Types: Understanding primitive data types (e.g., int, float, char, boolean, double) and non-primitive types (e.g., Arrays, Strings, Objects).
+    Variables: Declaration, initialization, and scope of variables.
+    Control Flow: Usage of decision-making statements (if, else, switch) and loops (for, while, do-while).
+
+2. Object-Oriented Programming (OOP) Concepts
+
+    Classes and Objects: Understanding classes, objects, and how they work together.
+    Constructors: Default and parameterized constructors, constructor overloading.
+    Methods: Method declaration, method overloading, method return types, and arguments.
+    Inheritance: Extending classes, super, method overriding, and the Object class.
+    Polymorphism: Runtime polymorphism (method overriding) and compile-time polymorphism (method overloading).
+    Encapsulation: Access modifiers (private, public, protected), getters and setters.
+    Abstraction: Abstract classes and interfaces, the difference between them.
+    Interface: Creating and implementing interfaces, default and static methods in interfaces.
+    Method Overloading and Overriding: Key differences, use cases, and the role of @Override.
+
+3. Data Structures
+
+    Arrays: Creating and accessing arrays, multi-dimensional arrays, and array manipulations.
+    Collections Framework:
+        List: ArrayList, LinkedList, and differences between them.
+        Set: HashSet, TreeSet, and LinkedHashSet.
+        Map: HashMap, TreeMap, and LinkedHashMap.
+        Queue: PriorityQueue, LinkedList, and Queue interface.
+    Iterators: Usage of Iterator, ListIterator, and the for-each loop.
+    Generics: Introduction to generics and how to use them with collections.
+
+4. Exception Handling
+
+    Try-Catch Block: Basic usage of try, catch, finally for exception handling.
+    Types of Exceptions: Checked exceptions vs unchecked exceptions, IOException, SQLException, NullPointerException, etc.
+    Throw and Throws: How to throw exceptions manually and declare exceptions in methods.
+    Custom Exceptions: Creating and handling custom exceptions.
+
+5. String Handling
+
+    String Class: String creation, concatenation, and manipulation.
+    String Methods: Common methods like length(), charAt(), substring(), equals(), compareTo(), trim(), toUpperCase(), toLowerCase(), etc.
+    StringBuffer and StringBuilder: Differences between String, StringBuilder, and StringBuffer, and when to use each.
+
+6. Java Input/Output (I/O)
+
+    File Handling: Basic reading and writing files using FileReader, BufferedReader, FileWriter, BufferedWriter, etc.
+    Streams: Difference between byte streams (InputStream, OutputStream) and character streams (Reader, Writer).
+    Serialization: Basics of object serialization and deserialization using Serializable interface.
+
+7. Java 8 Features (Optional for Freshers)
+
+    Lambda Expressions: Basics of lambda expressions, syntax, and how to use them for functional interfaces.
+    Streams API: Introduction to the Stream API, filter(), map(), reduce(), and other stream operations.
+    Functional Interfaces: Runnable, Callable, Consumer, Supplier, and custom functional interfaces.
+    Method References: Simplifying method calls with method references (ClassName::methodName).
+
+8. Multithreading and Concurrency
+
+    Threads: Creating threads using Thread class and Runnable interface.
+    Thread Life Cycle: The life cycle of a thread and common thread states.
+    Synchronization: Using synchronized keyword to control access to shared resources.
+    Executor Framework: Introduction to ExecutorService, Executors, and managing thread pools.
+    Thread Communication: Basics of inter-thread communication using wait(), notify(), and notifyAll().
+
+9. Java Memory Management
+
+    Garbage Collection: What is garbage collection, how it works, and the role of the JVM.
+    Heap and Stack Memory: The difference between heap memory and stack memory, and where objects and primitive types are stored.
+    Memory Leaks: Understanding memory leaks and how to avoid them.
+
+10. Java Modifiers
+
+    Access Modifiers: Understanding the use of public, private, protected, and default (package-private).
+    Non-Access Modifiers: static, final, transient, volatile, and synchronized.
+    final Keyword: Final variables, methods, and classes.
+
+11. Java Best Practices
+
+    Code Style: Following proper naming conventions for variables, methods, and classes.
+    Efficiency: Writing efficient code, handling large datasets, and avoiding performance pitfalls.
+    Readability: Importance of writing clean, readable, and maintainable code.
+    Comments and Documentation: Writing effective comments and using Javadoc for documentation.
+
+12. Java Virtual Machine (JVM) and Just-In-Time (JIT) Compiler
+
+    JVM Architecture: Understanding the role of JVM, garbage collection, and the execution of bytecode.
+    JIT Compilation: How JIT compiles bytecode into machine code for performance improvement.
+
+13. Java Best Practices for Code Efficiency and Scalability
+
+    Code Optimization: Techniques for optimizing loops, recursive functions, and memory usage.
+    Scalability: How to write scalable applications in Java by understanding the efficient use of resources.
+
+14. Database Connectivity
+
+    JDBC (Java Database Connectivity): Basics of JDBC, how to connect to databases using Connection, Statement, and ResultSet.
+    CRUD Operations: Performing Create, Read, Update, and Delete operations using JDBC.
+    PreparedStatement: Using PreparedStatement to avoid SQL injection and improve performance.
