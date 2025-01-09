@@ -1,0 +1,133 @@
+1. SQL Basics
+
+    SQL Syntax: Basic structure of an SQL query.
+    SQL Commands: Understanding of DDL (Data Definition Language), DML (Data Manipulation Language), and DCL (Data Control Language) commands.
+        DDL: CREATE, ALTER, DROP, TRUNCATE, RENAME
+        DML: SELECT, INSERT, UPDATE, DELETE
+        DCL: GRANT, REVOKE
+    Database and Tables: Basic concepts of databases and tables, how to create and delete them.
+
+2. SELECT Statement
+
+    Basic SELECT Query: Retrieving data using the SELECT statement.
+        Example: SELECT column1, column2 FROM table_name;
+    DISTINCT: Removing duplicate records with DISTINCT.
+        Example: SELECT DISTINCT column_name FROM table_name;
+    WHERE Clause: Filtering records based on conditions.
+        Example: SELECT column1 FROM table_name WHERE condition;
+    AND, OR, NOT Operators: Combining multiple conditions using logical operators.
+        Example: SELECT column_name FROM table_name WHERE condition1 AND condition2;
+    BETWEEN, IN, LIKE: Using BETWEEN for range queries, IN for multiple values, and LIKE for pattern matching.
+        Example: SELECT * FROM table_name WHERE column_name LIKE 'A%';
+
+3. Sorting and Limiting Data
+
+    ORDER BY Clause: Sorting query results by one or more columns (ascending or descending).
+        Example: SELECT * FROM table_name ORDER BY column_name ASC;
+    LIMIT / OFFSET: Limiting the number of rows returned (specific to databases like MySQL, PostgreSQL, etc.).
+        Example: SELECT * FROM table_name LIMIT 10;
+
+4. Aggregate Functions
+
+    COUNT(): Counting the number of rows.
+    SUM(): Summing the values in a numeric column.
+    AVG(): Calculating the average value of a numeric column.
+    MIN() and MAX(): Finding the minimum and maximum values.
+        Example: SELECT COUNT(*) FROM table_name WHERE condition;
+    GROUP BY Clause: Grouping rows based on one or more columns.
+        Example: SELECT column_name, COUNT(*) FROM table_name GROUP BY column_name;
+    HAVING Clause: Filtering groups created by GROUP BY.
+        Example: SELECT column_name, COUNT(*) FROM table_name GROUP BY column_name HAVING COUNT(*) > 5;
+
+5. Joining Tables
+
+    INNER JOIN: Retrieves rows that have matching values in both tables.
+        Example: SELECT * FROM table1 INNER JOIN table2 ON table1.column = table2.column;
+    LEFT JOIN (LEFT OUTER JOIN): Retrieves all rows from the left table and matching rows from the right table.
+        Example: SELECT * FROM table1 LEFT JOIN table2 ON table1.column = table2.column;
+    RIGHT JOIN (RIGHT OUTER JOIN): Retrieves all rows from the right table and matching rows from the left table.
+        Example: SELECT * FROM table1 RIGHT JOIN table2 ON table1.column = table2.column;
+    FULL JOIN (FULL OUTER JOIN): Retrieves rows with matching values in either the left or right table.
+        Example: SELECT * FROM table1 FULL JOIN table2 ON table1.column = table2.column;
+    SELF JOIN: Joining a table with itself.
+        Example: SELECT a.column1, b.column2 FROM table a, table b WHERE a.id = b.id;
+
+6. Subqueries
+
+    Subquery in SELECT: Using subqueries to return data for the main query.
+        Example: SELECT column1 FROM table1 WHERE column2 IN (SELECT column2 FROM table2);
+    Subquery in WHERE Clause: Filtering results based on subquery results.
+    Correlated Subquery: A subquery that refers to the outer query.
+        Example: SELECT column1 FROM table1 WHERE column2 = (SELECT MAX(column2) FROM table2 WHERE table1.id = table2.id);
+
+7. Data Manipulation
+
+    INSERT INTO: Inserting new data into a table.
+        Example: INSERT INTO table_name (column1, column2) VALUES (value1, value2);
+    UPDATE: Modifying existing records in a table.
+        Example: UPDATE table_name SET column1 = value1 WHERE condition;
+    DELETE: Deleting records from a table.
+        Example: DELETE FROM table_name WHERE condition;
+
+8. SQL Constraints
+
+    PRIMARY KEY: Ensuring uniqueness for a column and preventing NULL values.
+    FOREIGN KEY: Ensuring referential integrity between two tables.
+    UNIQUE: Ensuring all values in a column are distinct.
+    CHECK: Enforcing a condition on values in a column.
+    NOT NULL: Ensuring a column cannot have NULL values.
+    DEFAULT: Assigning a default value to a column when no value is specified.
+
+9. Data Types in SQL
+
+    Numeric Types: INT, FLOAT, DECIMAL, BIGINT.
+    Character Types: CHAR, VARCHAR, TEXT.
+    Date and Time: DATE, TIME, DATETIME, TIMESTAMP, YEAR.
+    Boolean: BOOLEAN.
+    Binary Types: BLOB, BINARY, VARBINARY.
+
+10. Normalization and Denormalization
+
+    Normalization: Process of organizing data to reduce redundancy (1NF, 2NF, 3NF).
+    Denormalization: Adding redundancy to optimize performance in some cases.
+    Functional Dependency: Understanding dependencies between columns.
+
+11. Indexes in SQL
+
+    Creating Indexes: Improving query performance using indexes.
+        Example: CREATE INDEX index_name ON table_name (column_name);
+    Types of Indexes: Single-column index, composite index, unique index.
+    Index Usage: When to use indexes and their impact on performance.
+
+12. Views and Stored Procedures
+
+    Views: Creating virtual tables from queries, and using CREATE VIEW.
+        Example: CREATE VIEW view_name AS SELECT column1, column2 FROM table_name;
+    Stored Procedures: Creating and executing stored procedures for reusable SQL code.
+        Example: CREATE PROCEDURE procedure_name AS BEGIN ... END;
+    Triggers: Using triggers to automatically perform actions on certain events (INSERT, UPDATE, DELETE).
+
+13. Transactions in SQL
+
+    Transaction Control: Understanding BEGIN, COMMIT, ROLLBACK, and SAVEPOINT.
+    ACID Properties: Atomicity, Consistency, Isolation, Durability in transactions.
+    Isolation Levels: Understanding isolation levels like READ COMMITTED, READ UNCOMMITTED, SERIALIZABLE.
+
+14. SQL Optimization
+
+    Query Optimization: Using proper indexing, avoiding SELECT *, and analyzing query plans.
+    Explain Plan: Using EXPLAIN to analyze and optimize SQL queries.
+
+15. SQL Joins and Set Operations (Advanced)
+
+    Union and Union All: Combining results of multiple queries.
+        Example: SELECT column1 FROM table1 UNION SELECT column1 FROM table2;
+    INTERSECT: Retrieving common rows between two queries.
+        Example: SELECT column1 FROM table1 INTERSECT SELECT column1 FROM table2;
+    EXCEPT: Retrieving rows from the first query that are not in the second query.
+
+16. Advanced SQL Concepts (Optional for Freshers)
+
+    Recursive Queries: Using WITH clause for recursive queries (common table expressions - CTE).
+    Window Functions: Using functions like ROW_NUMBER(), RANK(), LEAD(), and LAG() to perform calculations over a window of rows.
+    Pivot Tables: Using CASE or GROUP BY to create pivot tables in SQL.
